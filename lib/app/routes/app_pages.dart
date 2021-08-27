@@ -1,3 +1,5 @@
+import 'package:app_baneco/app/modules/detail/detail_binding.dart';
+import 'package:app_baneco/app/modules/detail/detail_page.dart';
 import 'package:app_baneco/app/modules/home/home_binding.dart';
 import 'package:app_baneco/app/modules/home/home_page.dart';
 import 'package:app_baneco/app/modules/login/login_binding.dart';
@@ -23,6 +25,11 @@ class AppPages {
       name: AppRoutes.HOME,
       page: () => HomePage(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.DETAIL,
+      page: () => DetailPage(),
+      binding: DetailBinding(),
     ),
   ];
 }

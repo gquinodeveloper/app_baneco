@@ -9,9 +9,11 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(
       builder: (_) => Scaffold(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.white,
         body: Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(
+            color: Colors.pink,
+          ),
         ),
       ),
     );
